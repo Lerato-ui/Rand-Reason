@@ -1,3 +1,0 @@
-import { Car, Clapperboard, CreditCard, GraduationCap, HeartPulse, Home, MoreHorizontal, Shield, ShoppingCart, Users, Wifi, Zap } from 'lucide-react'
-const M: Record<string, any> = { Rent: Home, Groceries: ShoppingCart, Transport: Car, Electricity: Zap, 'Data & airtime': Wifi, Medical: HeartPulse, Insurance: Shield, Education: GraduationCap, Debt: CreditCard, 'Family support': Users, Entertainment: Clapperboard, Other: MoreHorizontal }
-export const CatIcon = ({ name, size = 18 }: { name: string; size?: number }) => { const I = M[name] ?? MoreHorizontal; return <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-mint text-forest" aria-hidden><I size={size} /></span> }
