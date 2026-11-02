@@ -1,0 +1,40 @@
+@import '@fontsource-variable/fraunces/full.css';
+@import '@fontsource-variable/instrument-sans/index.css';
+@tailwind base;@tailwind components;@tailwind utilities;
+@layer base{
+ html{-webkit-text-size-adjust:100%}
+ body{@apply bg-paper font-sans text-ink antialiased;font-size:16px;line-height:1.55;font-feature-settings:'tnum' 1;font-variant-numeric:tabular-nums}
+ h1,h2,h3{@apply font-serif font-medium}
+ :focus-visible{outline:3px solid #E4451C;outline-offset:2px;border-radius:2px}
+ ::selection{background:#FFE49A;color:#1B1A17}
+ input[type=number]{-moz-appearance:textfield}
+}
+@layer components{
+ .serif{font-family:'Fraunces Variable','Fraunces',Georgia,serif;font-variation-settings:'SOFT' 50,'WONK' 0}
+ .prose-s{@apply font-serif text-prose text-ink}
+ .prose-s p+p{margin-top:1rem}
+ /* A number you can edit, set inside a sentence. */
+ .num-in{font:inherit;font-weight:600;color:#E4451C;background:linear-gradient(#FFE49A,#FFE49A) 0 100%/100% 42% no-repeat;border:0;border-bottom:2px dotted #E4451C;border-radius:0;padding:0 .12em;text-align:center;min-width:2.2ch;transition:background-size .2s}
+ .num-in:hover,.num-in:focus{background-size:100% 100%;outline:0}
+ .num-in[aria-invalid=true]{color:#C2331A;border-color:#C2331A}
+ select.num-in{appearance:none;cursor:pointer;padding-right:.9em;background-image:linear-gradient(#FFE49A,#FFE49A),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23E4451C' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:0 100%,right .15em center;background-size:100% 42%,.55em}
+ .figure{@apply border-y border-ink py-4}
+ .cap{@apply font-sans text-[12.5px] leading-snug text-mute}
+ .cap b{@apply font-semibold text-ink}
+ .lbl{@apply mb-1 block text-[12px] font-semibold uppercase tracking-[.08em] text-mute}
+ .inp{@apply h-11 w-full rounded-none border-0 border-b-2 border-ink bg-transparent px-1 font-serif text-[1.05rem] text-ink placeholder:text-mute/50 transition-colors hover:bg-mark/40 focus:bg-mark focus:outline-none disabled:opacity-50}
+ .inp[aria-invalid=true]{@apply border-neg bg-negSoft}
+ select.inp{@apply pr-6}
+ .btn{@apply inline-flex h-12 items-center justify-center gap-2 rounded-full bg-ink px-6 text-[15px] font-semibold text-paper transition-colors hover:bg-rand active:scale-[.99] disabled:cursor-not-allowed disabled:opacity-40}
+ .btn2{@apply inline-flex h-12 items-center justify-center gap-2 rounded-full border-2 border-ink px-5 text-[15px] font-semibold text-ink transition-colors hover:bg-mark active:scale-[.99] disabled:opacity-40}
+ .btnq{@apply inline-flex min-h-[40px] items-center gap-1 font-semibold text-rand underline decoration-2 underline-offset-4 hover:bg-mark}
+ .eyebrow{@apply text-[12px] font-semibold uppercase tracking-[.1em] text-mute}
+ .pill{@apply inline-flex items-center rounded-full border border-ink px-2.5 py-0.5 text-[12px] font-semibold}
+ .ledger{@apply w-full font-sans text-[15px]}
+ .ledger th{@apply border-b-2 border-ink px-2 py-2 text-left text-[12px] font-semibold uppercase tracking-[.08em] text-mute}
+ .ledger td{@apply border-b border-line px-2 py-3}
+ .ledger .r{@apply text-right}
+ .card{@apply border-t border-ink pt-5}
+ .tbl{@apply w-full text-[15px]}.tbl th{@apply border-b-2 border-ink px-2 py-2 text-left text-[12px] font-semibold uppercase text-mute}.tbl td{@apply border-b border-line px-2 py-3}.tbl .r{@apply text-right}
+}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
