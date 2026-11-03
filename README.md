@@ -1,6 +1,6 @@
 # SA Finance — Visual Studio setup
 
-This project contains an ASP.NET Core 8 (C#) API and a React + TypeScript frontend. The old standalone HTML/JavaScript preview has been removed; build the React frontend before launching the site for the first time.
+This project contains an ASP.NET Core 8 (C#) API and a React + TypeScript frontend. 
 
 ## Requirements
 
@@ -12,10 +12,10 @@ This project contains an ASP.NET Core 8 (C#) API and a React + TypeScript fronte
 
 ## First-time setup (recommended)
 
-1. Extract `SaFinance_VisualStudio.zip` to a normal folder, for example `C:\Users\YourName\source\repos\SaFinance`.
+1. Extract `SaFinance_VisualStudio.zip` to a normal folder, for example `C:\Users\YourName\source\repos\Rand & Reason`.
 2. Open Visual Studio 2022.
-3. Select **Open a project or solution** and open `SaFinance.csproj` from the extracted `SaFinance` folder.
-4. In Visual Studio, choose **View > Terminal**. Make sure the terminal is in the `SaFinance` project folder (the folder containing `SaFinance.csproj`).
+3. Select **Open a project or solution** and open `Rand & Reason.csproj` from the extracted `Rand & Reason` folder.
+4. In Visual Studio, choose **View > Terminal**. Make sure the terminal is in the `Rand & Reason` project folder (the folder containing `Rand & Reason.csproj`).
 5. Install the React dependencies:
 
    ```powershell
@@ -31,7 +31,7 @@ This project contains an ASP.NET Core 8 (C#) API and a React + TypeScript fronte
 
    If the build fails, read the first TypeScript/build error shown in the terminal and fix that before continuing. The first build requires internet access so npm can download the packages.
 
-7. Return to Visual Studio. In **Solution Explorer**, right-click the `SaFinance` project and select **Set as Startup Project** if necessary.
+7. Return to Visual Studio. In **Solution Explorer**, right-click the `Rand & Reason` project and select **Set as Startup Project** if necessary.
 8. In the run-target dropdown beside the green Start button, select the **SaFinance** project profile (not IIS Express if you want the configured local URL).
 9. Press **Ctrl+F5** to run without debugging, or **F5** to run with debugging.
 10. Open `http://localhost:5000` in your browser. The React interface should load, and tax calculations are sent to the C# API at `/api/tax`.
@@ -54,13 +54,13 @@ Use this when you want React changes to refresh without rebuilding the frontend 
 
 ## Run the automated tests
 
-In the Visual Studio terminal, from the folder containing `SaFinance.csproj`, run:
+In the Visual Studio terminal, from the folder containing `Rand & Reason.csproj`, run:
 
 ```powershell
 dotnet test .\Tests\SaFinance.Tests.csproj
 ```
 
-You can also right-click the test project (if loaded into the solution) and use Visual Studio's Test Explorer. If the test project does not appear automatically, use **Test > Configure Run Settings** or open `Tests\SaFinance.Tests.csproj` separately, or run the command above.
+You can also right-click the test project (if loaded into the solution) and use Visual Studio's Test Explorer. If the test project does not appear automatically, use **Test > Configure Run Settings** or open `Tests\Rand & Reason.Tests.csproj` separately, or run the command above.
 
 ## Common problems
 
@@ -78,5 +78,4 @@ You can also right-click the test project (if loaded into the solution) and use 
 - Browser data is stored in local storage on that browser/device only; there is no account-based cloud sync or backup.
 - The tax output is an estimate, not a SARS assessment or professional tax advice.
 
-## Redesign v2 (product-first)
-Current design: the statement (chapters written as editable sentences). See `docs/DESIGN.md`. Run frontend tests with `npm test` in `client` (vitest: money, month keys, goal maths, cash-flow bucketing). `/overview` now redirects to `/`.
+
