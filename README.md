@@ -1,4 +1,4 @@
-# SA Finance — Visual Studio setup
+# SA Finance  Visual Studio setup
 
 This project contains an ASP.NET Core 8 (C#) API and a React + TypeScript frontend. 
 
@@ -10,7 +10,7 @@ This project contains an ASP.NET Core 8 (C#) API and a React + TypeScript fronte
 
 > This project targets **.NET 8**, not .NET 10. You do not need to retarget it to run it in Visual Studio 2022.
 
-## First-time setup (recommended)
+## First-time setup
 
 1. Extract `SaFinance_VisualStudio.zip` to a normal folder, for example `C:\Users\YourName\source\repos\Rand & Reason`.
 2. Open Visual Studio 2022.
