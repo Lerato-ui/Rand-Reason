@@ -1,4 +1,4 @@
-// Rand & Reason, "the statement": warm paper, ink, one orange for the numbers that matter, a marker-yellow highlight for anything you can edit.
+
 export default { content: ['./index.html','./src/**/*.{ts,tsx}'], theme: { extend: {
  colors: { paper:'#F5F0E6', ground:'#EFE8DA', card:'#FBF8F1', ink:'#1B1A17', mute:'#5E5A50', line:'#D9D0BD', rule:'#1B1A17',
   rand:'#E4451C', forest:'#0F3D2E', leaf:'#2E7D5B', mark:'#FFE49A', mint:'#E6EDE3', pos:'#157A4F', neg:'#C2331A', negSoft:'#F8E0D8', warn:'#8A5200', warnSoft:'#FBEBC8', info:'#2B5E8C', infoSoft:'#E1EAF2', rail:'#1B1A17', railHi:'#2C2A25' },
